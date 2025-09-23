@@ -31,17 +31,15 @@ function animateOnScroll() {
     });
 }
 
-// Executa quando a página carregar e ao rolar
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
 
-
+// Modal
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('product-modal');
     const modalImg = document.getElementById('modal-image');
     const closeBtn = document.getElementsByClassName('close-btn')[0];
 
-    // Abrir modal ao clicar no produto
     const products = document.querySelectorAll('.produto img');
     products.forEach(img => {
         img.addEventListener('click', function () {
@@ -50,19 +48,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Fechar modal no botão X
     closeBtn.addEventListener('click', function () {
         modal.style.display = 'none';
     });
 
-    // Fechar clicando fora da imagem
     modal.addEventListener('click', function (event) {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
     });
 
-    // Fechar com tecla ESC
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape' && modal.style.display === 'block') {
             modal.style.display = 'none';

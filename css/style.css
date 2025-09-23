@@ -139,7 +139,6 @@ footer {
   transition: all 0.6s ease;
 }
 
-/* Quando aparece na tela */
 .animate.show,
 .animar.show {
   opacity: 1;
@@ -166,11 +165,11 @@ footer {
 }
 
 /* Imagens */
-.imagem-index {
+.imagem {
   margin-bottom: 40px;
 }
 
-.imagem-index img {
+.imagem img {
   display: block;
   max-width: 100%;
   margin: 20px auto;
@@ -178,12 +177,12 @@ footer {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.imagem-index img:hover {
+.imagem img:hover {
   transform: scale(1.02);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.imagem-index .frase {
+.imagem .frase {
   font-family: 'Lekton', sans-serif;
   font-size: 28px;
   color: #FFFFFF;
@@ -208,31 +207,16 @@ footer {
 }
 
 /* Serviços */
-.servicos {
-  margin-bottom: 40px;
-}
-
-.servicos img {
-  display: block;
-  max-width: 100%;
-  margin: 20px auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.servicos img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
 .tecnologia {
+  margin-top: 50px;
   list-style: none;
   padding: 0;
-  display: inline-block;
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }
 
-.tecnologia li {
+.tecnologia-texto li {
   font-size: 18px;
   margin-bottom: 12px;
   display: flex;
@@ -272,23 +256,25 @@ footer {
 }
 
 .produto img {
-  width: 80%;
+  width: 75%;
   border-radius: 10px;
   margin: 20px auto 10px;
   display: block;
 }
 
 .produto p {
+  font-weight: 600;
   text-align: center;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 18px;
   color: #FFFFFF;
   margin-bottom: 10px;
 }
 
 .produto p.nome {
+  color: #8B0000;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
 }
 
