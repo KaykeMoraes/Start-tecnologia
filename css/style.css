@@ -333,8 +333,7 @@ footer {
   margin-top: 20px;
 }
 
-.contato input,
-.contato textarea {
+.contato input, .contato textarea {
   width: 80%;
   padding: 10px;
   margin: 10px 0;
@@ -345,8 +344,7 @@ footer {
   border-radius: 5px;
 }
 
-.contato input:focus,
-.contato textarea:focus {
+.contato input:focus, .contato textarea:focus {
   outline: none;
   border-color: #8B0000;
   background-color: #2a2a2a;
